@@ -4,6 +4,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("green-texture.jpg");
+    background-repeat: repeat;
 }
 
 img {
