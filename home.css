@@ -123,6 +123,7 @@ h1 {
 #projects,
 #about {
     flex-direction: column;
+    gap: 50px;
 }
 
 .about-container {
