@@ -36,7 +36,7 @@ nav {
     display: flex;
     justify-self: center;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
     color: var(--light-text);
     text-transform: uppercase;
     font-family: var(--heading-font);
@@ -58,8 +58,25 @@ nav {
 
 h1 {
     color: var(--primary-color);
-    font-size: xx-large;
+    font-size: 60px;
     font-family: var(--heading-font);
     font-weight: var(--heading-font-weight);
     font-style: var(--heading-font-style);
+    text-transform: uppercase;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.project-container {
+    width: 345px;
+    height: 260px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
 }
