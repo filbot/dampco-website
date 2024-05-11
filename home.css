@@ -6,9 +6,9 @@
     --light-text: #FFFFFF;
 
     /* Fonts */
-    --header-font: "Squada One", sans-serif;
-    --header-font-weight: 400;
-    --header-font-style: normal;
+    --heading-font: "Squada One", sans-serif;
+    --heading-font-weight: 400;
+    --heading-font-style: normal;
 }
 
 body {
