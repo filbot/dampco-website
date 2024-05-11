@@ -118,3 +118,8 @@ h1 {
     padding: 10px;
     text-align: center;
 }
+
+#projects,
+#about {
+    flex-direction: column;
+}
