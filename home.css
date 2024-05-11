@@ -39,6 +39,7 @@ nav {
     gap: 10px;
     color: var(--light-text);
     text-transform: uppercase;
+    font-family: var(--heading-font);
 }
 
 .hero {
