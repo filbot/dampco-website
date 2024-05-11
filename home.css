@@ -124,3 +124,7 @@ h1 {
 #about {
     flex-direction: column;
 }
+
+footer {
+    background-color: var(--secondary-color);
+}
