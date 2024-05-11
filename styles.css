@@ -1,13 +1,201 @@
+:root {
+    /* Colors */
+    --primary-color: #C15C3C;
+    --secondary-color: #40616C;
+    --background-color: #F6ECE4;
+    --light-text: #FFFFFF;
+
+    /* Fonts */
+    --heading-font: "Squada One", sans-serif;
+    --heading-font-weight: 400;
+    --heading-font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    height: 100vh;
-    background-color: #7a8d7a;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+a {
+    color: inherit;        /* Inherits the color from the parent element */
+    text-decoration: none; /* Removes underline */
+    background-color: transparent; /* Ensures no background color */
+    font-size: inherit;    /* Inherits the font size from the parent */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 50px;
+    color: var(--light-text);
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+}
+
+#hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .hero-img {
+        width: 530px;
+    }
+
+    .tag-line-container {
+        font-family: var(--heading-font);
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        text-transform: uppercase;
+        line-height: 1;
+
+        .top,
+        .bottom {
+            color: var(--primary-color);
+            font-size: 40px;
+        }
+
+        .middle {
+            color: var(--secondary-color);
+            font-size: 60px;
+        }
+    }
+}
+
+section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("green-texture.jpg");
-    background-repeat: repeat;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-img {
-    max-width: 80%;
+h1 {
+    color: var(--primary-color);
+    font-size: 60px;
+    font-family: var(--heading-font);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    text-transform: uppercase;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.project-container {
+    /* width: 345px; */
+    height: 260px;
+    background-color: #D9D9D9;
+    padding: 10px;
+    text-align: center;
+}
+
+#projects,
+#about {
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    .founders-img {
+        width: 530px;
+    }
+
+    .about-tagline-container {
+        font-family: var(--heading-font);
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        text-transform: uppercase;
+        line-height: 1;
+
+        .top {
+            color: var(--primary-color);
+            font-size: 40px;
+        }
+
+        .bottom {
+            color: var(--secondary-color);
+            font-size: 60px;
+        }
+    }
+}
+
+footer {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .raytheon-tagline {
+            font-family: var(--heading-font);
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+
+        img {
+            width: 100px;
+        }
+    }
+
+    .social-links-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        img {
+            width: 30px;
+        }
+    }
+}
+
+footer::before {
+    content: '';
+    flex-grow: 1;
 }
