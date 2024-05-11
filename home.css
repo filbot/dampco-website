@@ -159,9 +159,8 @@ h1 {
 
 footer {
     background-color: var(--secondary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 10%;
@@ -188,8 +187,8 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 50px;
-        
+        gap: 40px;
+
         img {
             width: 30px;
         }
