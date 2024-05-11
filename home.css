@@ -53,6 +53,24 @@ nav {
     .hero-img {
         width: 530px;
     }
+
+    .tag-line-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+
+        .top,
+        .bottom {
+            color: var(--primary-color);
+            font-size: 40px;
+        }
+
+        .middle {
+            color: var(--secondary-color);
+            font-size: 60px;
+        }
+    }
 }
 
 section {
