@@ -58,7 +58,7 @@ nav {
 h1 {
     color: var(--primary-color);
     font-size: xx-large;
-    font-family: var(--header-font);
-    font-weight: var(--header-font-weight);
-    font-style: var(--header-font-style);
+    font-family: var(--heading-font);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
 }
