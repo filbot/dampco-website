@@ -46,8 +46,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -87,4 +85,15 @@ h1 {
     background-color: #D9D9D9;
     padding: 10px;
     text-align: center;
+}
+
+.vintage-ad {
+    /* Combining several filters to create a vintage look */
+    filter: grayscale(50%) contrast(130%) brightness(90%) sepia(30%);
+    /* Optional: Add a slight blur to mimic older print imperfections */
+    filter: blur(1px);
+    /* Adding a border to emulate an old photo or print ad */
+    border: 4px solid #f3f3f3;
+    /* Adding a box shadow for a slightly worn look */
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
