@@ -1,0 +1,36 @@
+:root {
+    --primary-color: #C15C3C;
+    --secondary-color: #40616C;
+    --background-color: #F6ECE4;
+    --light-text: #FFFFFF;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo {
+    height: 70px;
+    width: 265px;
+    background-color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--light-text);
+    text-transform: uppercase;
+}
