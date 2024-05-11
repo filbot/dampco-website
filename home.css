@@ -169,6 +169,7 @@ footer {
     .footer-logo {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         .raytheon-tagline {
             font-family: var(--heading-font);
@@ -179,6 +180,12 @@ footer {
 
         img {
             width: 100px;
+        }
+    }
+
+    .social-links-container {
+        img {
+            width: 30px;
         }
     }
 }
