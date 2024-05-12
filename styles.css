@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'DampRegular';
+    src: url('./Damp-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root {
     /* Colors */
     --primary-color: #C15C3C;
@@ -6,7 +14,7 @@
     --light-text: #FFFFFF;
 
     /* Fonts */
-    --heading-font: "Squada One", sans-serif;
+    --heading-font: "DampRegular", sans-serif;
     --heading-font-weight: 400;
     --heading-font-style: normal;
 }
